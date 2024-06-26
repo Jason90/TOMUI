@@ -1,0 +1,12 @@
+// {type:class}
+[case||test_abc()]-.->[business||loaddata();query()]
+
+[business]-.->[util||http;regex;serializer;logger]
+
+[business]-.->[page||UIelement]
+
+[page]-.->[model||ObjDict]
+
+[model]-.->[data||json;xml]
+
+// xml=>dict=>json=>obj
